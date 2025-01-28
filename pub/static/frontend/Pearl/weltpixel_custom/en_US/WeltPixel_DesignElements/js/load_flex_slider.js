@@ -1,0 +1,1 @@
+/home/sandsprecision/newdev.sandsprecision.com/app/code/WeltPixel/DesignElements/view/frontend/web/js/load_flex_slider.js

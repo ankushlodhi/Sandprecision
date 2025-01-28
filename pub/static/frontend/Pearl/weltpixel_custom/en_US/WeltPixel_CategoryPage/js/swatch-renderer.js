@@ -1,0 +1,1 @@
+/home/sandsprecision/newdev.sandsprecision.com/app/design/frontend/Pearl/weltpixel/WeltPixel_CategoryPage/web/js/swatch-renderer.js

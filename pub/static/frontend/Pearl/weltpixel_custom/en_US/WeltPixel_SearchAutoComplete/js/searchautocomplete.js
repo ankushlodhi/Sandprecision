@@ -1,0 +1,1 @@
+/home/sandsprecision/newdev.sandsprecision.com/app/code/WeltPixel/SearchAutoComplete/view/frontend/web/js/searchautocomplete.js

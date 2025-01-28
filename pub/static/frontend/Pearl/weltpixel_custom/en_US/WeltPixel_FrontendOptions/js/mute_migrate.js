@@ -1,0 +1,1 @@
+/home/sandsprecision/newdev.sandsprecision.com/app/code/WeltPixel/FrontendOptions/view/frontend/web/js/mute_migrate.js

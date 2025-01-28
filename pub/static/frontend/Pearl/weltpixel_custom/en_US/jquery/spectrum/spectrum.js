@@ -1,0 +1,1 @@
+/home/sandsprecision/newdev.sandsprecision.com/lib/web/jquery/spectrum/spectrum.js

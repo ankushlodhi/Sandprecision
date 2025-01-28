@@ -1,0 +1,1 @@
+/home/sandsprecision/newdev.sandsprecision.com/app/design/frontend/Pearl/Weltpixel_Custom/Magento_Review/web/js/process-reviews.js

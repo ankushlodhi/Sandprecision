@@ -1,0 +1,1 @@
+/home/sandsprecision/newdev.sandsprecision.com/app/code/WeltPixel/DesignElements/view/frontend/web/js/canvas/jquery.parallax.js

@@ -1,0 +1,1 @@
+/home/sandsprecision/newdev.sandsprecision.com/vendor/magento/module-page-builder/view/adminhtml/web/js/form/element/validator-rules-mixin.js

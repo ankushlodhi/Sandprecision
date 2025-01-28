@@ -1,0 +1,1 @@
+/home/sandsprecision/newdev.sandsprecision.com/app/code/WeltPixel/SocialLogin/view/frontend/web/js/view/authentication-popup.js

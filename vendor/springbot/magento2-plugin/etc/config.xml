@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+  <default>
+    <springbot>
+      <configuration>
+        <segment_size>10</segment_size>
+        <show_notifications>1</show_notifications>
+        <email_selector>billing:email,login-email,newsletter</email_selector>
+        <api_url>https://etl.springbot.com</api_url>
+        <app_url>https://app.springbot.com</app_url>
+        <assets_domain>d2z0bn1jv8xwtk.cloudfront.net</assets_domain>
+        <guest_offset>100000000</guest_offset>
+      </configuration>
+      <images>
+        <use_cached_images>0</use_cached_images>
+      </images>
+      <debug>
+        <log_http>0</log_http>
+        <log_level>info</log_level>
+        <log_format>default</log_format>
+        <expire_time_days>10</expire_time_days>
+        <filesize_limit>10000000</filesize_limit>
+      </debug>
+      <advanced>
+        <harvester_type>prattler</harvester_type>
+        <extended_config>1</extended_config>
+        <send_inventory>0</send_inventory>
+        <max_job_time>60</max_job_time>
+      </advanced>
+      <cart_restore>
+        <do_restore>1</do_restore>
+        <retain_coupon>1</retain_coupon>
+      </cart_restore>
+    </springbot>
+  </default>
+</config>

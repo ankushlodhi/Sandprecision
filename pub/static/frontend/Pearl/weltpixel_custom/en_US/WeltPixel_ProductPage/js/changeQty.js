@@ -1,0 +1,1 @@
+/home/sandsprecision/newdev.sandsprecision.com/app/design/frontend/Pearl/Weltpixel_Custom/WeltPixel_ProductPage/web/js/changeQty.js

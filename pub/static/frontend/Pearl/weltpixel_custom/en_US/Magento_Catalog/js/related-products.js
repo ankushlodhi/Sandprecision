@@ -1,0 +1,1 @@
+/home/sandsprecision/newdev.sandsprecision.com/app/design/frontend/Pearl/weltpixel/Magento_Catalog/web/js/related-products.js

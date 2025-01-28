@@ -1,0 +1,7 @@
+User-agent: * 
+Crawl-Delay: 20
+
+User-agent: 360Spider
+Disallow: /
+User-agent: Googlebot
+Disallow: /catalogsearch/

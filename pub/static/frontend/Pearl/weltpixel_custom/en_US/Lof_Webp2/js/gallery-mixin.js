@@ -1,0 +1,1 @@
+/home/sandsprecision/newdev.sandsprecision.com/app/code/Lof/Webp2/view/frontend/web/js/gallery-mixin.js

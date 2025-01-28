@@ -1,0 +1,1 @@
+/home/sandsprecision/newdev.sandsprecision.com/app/code/Mageplaza/GoogleRecaptcha/view/frontend/web/js/captcha.js

@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    var _sbparams = _sbparams || [];
+    if (_sbparams[0]) {
+        _sbparams[0].type = 'product';
+        _sbparams[0].id = '<?php echo $block->getId() ?>';
+        _sbparams[0].name = '<?php echo addslashes($block->getName()) ?>';
+        _sbparams[0].sku = '<?php echo $block->getSku() ?>';
+    } else {
+        _sbparams.push({
+            'type': 'product',
+            'id': '<?php echo $block->getId() ?>',
+            'name': '<?php echo addslashes($block->getName()) ?>',
+            'sku': '<?php echo $block->getSku() ?>'
+        });
+    }
+
+    window.addEventListener('load', function(event) {
+      var pixelContainer = document.createElement("div");
+      var pixel = document.createElement("IMG");
+      pixel.setAttribute("style", "height: 1px; width: 1px; position:absolute; visibility:hidden");
+      pixel.setAttribute("src", "<?php echo $this->getApiUrl() ?>/pixel/view?guid=<?php echo $block->getStoreGuid() ?>&sku=<?php echo $block->getSku() ?>&product_id=<?php echo $this->getId() ?>&pageurl=<?php echo urlencode($block->getCurrentUrl()) ?>&uuid="+SB.util.uuid());
+      pixel.className = 'sb-pixel';
+      pixelContainer.appendChild(pixel);
+      document.body.appendChild(pixelContainer);
+    });
+</script>

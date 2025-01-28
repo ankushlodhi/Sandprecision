@@ -1,0 +1,1 @@
+/home/sandsprecision/newdev.sandsprecision.com/vendor/magento/module-search/view/frontend/web/js/form-mini.js

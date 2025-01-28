@@ -1,0 +1,1 @@
+/home/sandsprecision/newdev.sandsprecision.com/app/code/WeltPixel/OwlCarouselSlider/view/frontend/web/js/owl.carousel.js

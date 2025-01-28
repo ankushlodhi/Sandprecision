@@ -1,0 +1,1 @@
+/home/sandsprecision/newdev.sandsprecision.com/vendor/magento/theme-adminhtml-backend/web/js/theme.js

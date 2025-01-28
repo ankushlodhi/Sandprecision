@@ -1,0 +1,1 @@
+/home/sandsprecision/newdev.sandsprecision.com/vendor/magento/module-wishlist/view/frontend/web/js/add-to-wishlist.js

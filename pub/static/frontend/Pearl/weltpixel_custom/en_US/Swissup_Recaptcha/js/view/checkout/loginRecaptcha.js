@@ -1,0 +1,1 @@
+/home/sandsprecision/newdev.sandsprecision.com/vendor/swissup/module-recaptcha/view/frontend/web/js/view/checkout/loginRecaptcha.js

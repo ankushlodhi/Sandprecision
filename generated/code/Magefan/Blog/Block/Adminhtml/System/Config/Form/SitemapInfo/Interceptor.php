@@ -1,0 +1,25 @@
+<?php
+namespace Magefan\Blog\Block\Adminhtml\System\Config\Form\SitemapInfo;
+
+/**
+ * Interceptor class for @see \Magefan\Blog\Block\Adminhtml\System\Config\Form\SitemapInfo
+ */
+class Interceptor extends \Magefan\Blog\Block\Adminhtml\System\Config\Form\SitemapInfo implements \Magento\Framework\Interception\InterceptorInterface
+{
+    use \Magento\Framework\Interception\Interceptor;
+
+    public function __construct(\Magento\Framework\Module\ModuleListInterface $moduleList, \Magento\Backend\Block\Template\Context $context, array $data = [], ?\Magefan\Community\Api\GetModuleVersionInterface $getModuleVersion = null, ?\Magefan\Community\Api\SecureHtmlRendererInterface $mfSecureRenderer = null)
+    {
+        $this->___init();
+        parent::__construct($moduleList, $context, $data, $getModuleVersion, $mfSecureRenderer);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function render(\Magento\Framework\Data\Form\Element\AbstractElement $element)
+    {
+        $pluginInfo = $this->pluginList->getNext($this->subjectType, 'render');
+        return $pluginInfo ? $this->___callPlugins('render', func_get_args(), $pluginInfo) : parent::render($element);
+    }
+}

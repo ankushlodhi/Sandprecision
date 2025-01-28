@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="generateOauthTokenCommand" xsi:type="object">Springbot\Main\Console\Command\GenerateOauthTokenCommand</item>
+                <item name="listStoresCommand" xsi:type="object">Springbot\Main\Console\Command\ListStoresCommand</item>
+                <item name="registerStoresCommand" xsi:type="object">Springbot\Main\Console\Command\RegisterStoresCommand</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <preference for="Springbot\Main\Api\LogInterface" type="Springbot\Main\Model\Api\Log"/>
+    <preference for="Springbot\Main\Api\CacheInterface" type="Springbot\Main\Model\Api\Cache"/>
+    <preference for="Springbot\Main\Api\ConfigInterface" type="Springbot\Main\Model\Api\Config"/>
+    <preference for="Springbot\Main\Api\ConfigItemInterface" type="Springbot\Main\Model\Api\ConfigItem"/>
+    <preference for="Springbot\Main\Api\CountsInterface" type="Springbot\Main\Model\Api\Counts"/>
+    <preference for="Springbot\Main\Api\ModulesInterface" type="Springbot\Main\Model\Api\Modules"/>
+    <preference for="Springbot\Main\Api\RedirectsInterface" type="Springbot\Main\Model\Api\Redirects"/>
+    <preference for="Springbot\Main\Api\RegisterStoresInterface" type="Springbot\Main\Model\Api\RegisterStores"/>
+    <preference for="Springbot\Main\Api\StoresInterface" type="Springbot\Main\Model\Api\Stores"/>
+
+    <preference for="Springbot\Main\Api\Entity\AttributeSetRepositoryInterface"
+                type="Springbot\Main\Model\Api\Entity\AttributeSetRepository"/>
+    <preference for="Springbot\Main\Api\Entity\Data\AttributeSetInterface"
+                type="Springbot\Main\Model\Api\Entity\Data\AttributeSet"/>
+
+    <preference for="Springbot\Main\Api\Entity\CartRepositoryInterface"
+                type="Springbot\Main\Model\Api\Entity\CartRepository"/>
+    <preference for="Springbot\Main\Api\Entity\Data\CartInterface" type="Springbot\Main\Model\Api\Entity\Data\Cart"/>
+
+    <preference for="Springbot\Main\Api\Entity\CategoryRepositoryInterface"
+                type="Springbot\Main\Model\Api\Entity\CategoryRepository"/>
+    <preference for="Springbot\Main\Api\Entity\Data\CategoryInterface"
+                type="Springbot\Main\Model\Api\Entity\Data\Category"/>
+
+    <preference for="Springbot\Main\Api\Entity\CustomerRepositoryInterface"
+                type="Springbot\Main\Model\Api\Entity\CustomerRepository"/>
+    <preference for="Springbot\Main\Api\Entity\Data\CustomerInterface"
+                type="Springbot\Main\Model\Api\Entity\Data\Customer"/>
+
+    <preference for="Springbot\Main\Api\Entity\GuestRepositoryInterface"
+                type="Springbot\Main\Model\Api\Entity\GuestRepository"/>
+    <preference for="Springbot\Main\Api\Entity\Data\GuestInterface" type="Springbot\Main\Model\Api\Entity\Data\Guest"/>
+
+    <preference for="Springbot\Main\Api\Entity\InventoryRepositoryInterface"
+                type="Springbot\Main\Model\Api\Entity\InventoryRepository"/>
+    <preference for="Springbot\Main\Api\Entity\Data\InventoryInterface"
+                type="Springbot\Main\Model\Api\Entity\Data\Inventory"/>
+
+    <preference for="Springbot\Main\Api\Entity\OrderRepositoryInterface"
+                type="Springbot\Main\Model\Api\Entity\OrderRepository"/>
+    <preference for="Springbot\Main\Api\Entity\Data\OrderInterface" type="Springbot\Main\Model\Api\Entity\Data\Order"/>
+
+    <preference for="Springbot\Main\Api\Entity\ProductRepositoryInterface"
+                type="Springbot\Main\Model\Api\Entity\ProductRepository"/>
+    <preference for="Springbot\Main\Api\Entity\Data\ProductInterface" type="Springbot\Main\Model\Api\Entity\Data\Product"/>
+	
+    <preference for="Springbot\Main\Api\Entity\V2ProductRepositoryInterface"
+                type="Springbot\Main\Model\Api\Entity\V2ProductRepository"/>
+    <preference for="Springbot\Main\Api\Entity\Data\V2ProductInterface" type="Springbot\Main\Model\Api\Entity\Data\V2Product"/>
+
+    <preference for="Springbot\Main\Api\Entity\RuleRepositoryInterface"
+                type="Springbot\Main\Model\Api\Entity\RuleRepository"/>
+    <preference for="Springbot\Main\Api\Entity\Data\RuleInterface" type="Springbot\Main\Model\Api\Entity\Data\Rule"/>
+
+    <preference for="Springbot\Main\Api\Entity\SubscriberRepositoryInterface"
+                type="Springbot\Main\Model\Api\Entity\SubscriberRepository"/>
+    <preference for="Springbot\Main\Api\Entity\Data\SubscriberInterface"
+                type="Springbot\Main\Model\Api\Entity\Data\Subscriber"/>
+
+    <preference for="Magento\Quote\Model\Quote\Address\RateCollectorInterface" type="Magento\Shipping\Model\Shipping" />
+    <preference for="Magento\Shipping\Model\CarrierFactoryInterface" type="Magento\Shipping\Model\CarrierFactory" />
+    <preference for="Magento\Shipping\Model\Carrier\Source\GenericInterface" type="\Magento\Shipping\Model\Carrier\Source\GenericDefault" />
+</config>
